@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+</head>
+<style>
+    div{
+        background-color: aqua;
+        height: 50px;
+    }
+
+    div p{
+       color: blue; 
+    }
+    /* div a{
+        color: white;
+    } */
+    div section p a.sect1{
+        color: white;
+    }
+    a.sect1{
+        color: white;
+    }
+
+    div > a{
+        color: white;
+    }
+
+    div > div {
+        background-color: brown;
+    }
+
+    div > section > p{
+        background-color: coral;
+    }
+</style>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="combinators.html">CSS Combinators</a>
+        <a href="positions.html">Positions</a>
+    </nav>
+    <h1>Combinators</h1>
+    <ol>
+        <li>Descendant Selector : Space</li>
+        <li>Child Selector : ></li>
+        <li>Adjacent (sibling) : +</li>
+        <li>General : ~</li>
+    </ol>
+
+    <p>
+        Hello this is general paragraph
+    </p>
+
+    <div>
+        <section>
+            <p>
+                Working of Descendant Selector <a class="sect1" href="">Read more</a>
+            </p>
+        </section>
+        <p>
+            <a href="">Child of div</a>
+        </p>
+        <div> Hello child div </div>
+    </div>
+
+    <div>
+        Hello div <a class="sect2" href="">Read more</a>
+    </div>
+    
+</body>
+</html>
