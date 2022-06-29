@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        #overflowDiv{
+            height: 200px;
+            border: 1px dashed #ff0000;
+            background-color: aqua;
+            overflow: auto;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            /* overflow-x: scrol; */
+        }
+
+        #floatDiv{
+            margin-top:10px;
+            height: 500px;
+            border: 1px solid red;
+        }
+
+        #floatDiv > img{
+            height: 200px;
+            width: 300px;
+            float: right;
+        }
+
+        #floatDiv span{
+            display: block;
+            clear: both;
+        }
+
+        nav a{
+            background-color: aqua;
+            padding: 10px;
+        }
+
+        nav a:link{
+            color: blue;
+        }
+
+        nav a:visited{
+            color: rgb(135, 240, 16);
+        }
+
+        nav a:hover{
+            color: #ff0000;
+        }
+
+        nav a:active{
+            color:black
+        }
+
+
+        #overflowDiv::first-letter{
+            color: #ff0000;
+            font-size: 28px;
+        }
+
+        #overflowDiv::first-line{  
+            color: #575b5e;  /* it will only work if element is of display:block (block level element) */
+        }
+
+        #span2::first-line{
+            color: #575b5e;  /* it will not work bcoz element is of inline type */
+        }
+
+        nav:last-child{
+            background-color: black;
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="fonts.html">Fonts</a>
+        <a href="overflow.html">Overflow</a>
+    </nav>
+    <br/>
+
+    <div id="overflowDiv">
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+        Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+    </div>
+
+    <div id="floatDiv">
+        <img src="https://picsum.photos/1500/250" />
+        <span>
+            Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+            Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+            Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class. 
+            Hello this is Web Development Class. Hello this is Web Development Class. Hello this is Web Development Class.
+        </span>
+    </div>
+
+    <span id="span2">hello this is an inline element</span>
+    
+</body>
+</html>
