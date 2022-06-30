@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ( * ) is universal selector it selects all elements */
+        *{
+            box-sizing: border-box;
+        }
+        #borderRad{
+            border: 1px solid #8967e6;
+            height: 100px;
+            /* width: 200px; */
+            padding: 10px;
+            border-radius: 0 50px 0 50px;
+            /* border-radius: 50%; */
+        }
+
+        #box1{
+            border: 5px solid #020202;
+            height: 75px;
+            width: 200px;
+            margin-left: 10px;
+            /* padding: 5px; */
+            /* box-sizing: border-box; */
+        }
+
+        #box2{
+            border: 1px solid #020202;
+            height: 75px;
+            width: 200px;
+        }
+
+        .btn{
+            border: none;
+            background-color: rgb(78, 29, 214);
+            color: white;
+            padding: 5px;
+            height: 30px;
+            width: 75px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+        }
+
+        .btn:hover{
+            box-shadow: 1px 1px 3px #020202;
+        }
+
+        #attrSelec{
+            border: 1px solid black;
+            height: 200px;
+        }
+
+        input[type=password]{
+            height: 50px;
+            width: 200px;
+            margin: 10px;
+        }
+
+        input[type=text]{
+            height: 30px;
+            width: 200px;
+            margin: 10px;
+            border: 1px dotted red;
+        }
+
+        h1[title]{
+            background-color: #8967e6;
+        }
+
+        h1#h1Spec{
+            background-color: black !important;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 title="attribute selector">Attribute Selector</h1>
+    <div id="attrSelec">
+        <br/>
+        <input type="text" placeholder="Enter your name" />
+        <br/>
+        <br/>
+        <input type="password" placeholder="Enter Password" />
+        <br/>
+    </div>
+
+    <h1 id="h1Spec" style="background-color: aqua;">Border Radius</h1>
+    <div id="borderRad">
+        Hello this is a div with borders, we will make it's border rounded.
+        <button class="btn"> Click Me </button>
+    </div>
+
+    <h1>Box-Sizing</h1>
+    <div id="box1"> hello i'm box 1</div>
+    <br/>
+    <div id="box2"> hello i'm box 2</div>
+    
+</body>
+</html>
