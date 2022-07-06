@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <script>
+        function toggleDarkMode(){
+
+            var defaultValue = document.getElementById('darkMode').innerText;
+
+            if(defaultValue == 'Dark'){
+                document.getElementById('darkMode').innerText = "Light";
+                document.getElementById('body').style.backgroundColor = "black";
+                document.getElementById('body').style.color = "white";
+            }
+            else if(defaultValue == 'Light'){
+                document.getElementById('darkMode').innerText = "Dark";
+                document.getElementById('body').style.backgroundColor = "white";
+                document.getElementById('body').style.color = "black";
+            }
+        }
+    </script>
+</head>
+<body id="body">
+
+    <button  onclick="toggleDarkMode()">Enable <span id="darkMode">Dark</span> Mode</button>
+    <h1>Control Statement : Switch Case</h1>
+    <p id="caseValue">Default Value</p>
+
+    <script>
+
+        var expression = "Wednesday";
+        switch(expression){
+            case "Monday":
+                //code/logic / function call
+                console.log("hello this is monday");
+                document.getElementById('caseValue').innerText = "hello this is monday";
+                break;
+            case "Tuesday":
+                //code/logic / function call
+                console.log("hello this is Tuesday");
+                document.getElementById('caseValue').innerText = "hello this is Tuesday";
+                break;
+            case "Wednesday":
+                //code/logic / function call
+                console.log("hello this is Wednesday");
+                document.getElementById('caseValue').innerText = "hello this is Wednesday";
+                break;
+            default:
+            console.log("hello no expression/case found");
+            document.getElementById('caseValue').innerText = "hello no expression/case found";
+                //code/logic / function call
+        }
+
+
+        // var exp = 122;
+        var exp = prompt("Enter your lucky number");
+        console.log("Exp ",typeof(exp));
+        exp = parseInt(exp);  //converts a number string to number 
+        switch(exp){   //it checks the data type of expression
+            case 1:
+                //code/logic / function call
+                console.log("You have won this game, you are winner.");
+                break;
+            case 2:
+                //code/logic / function call
+                console.log("You have won an Iphone");
+                break;
+            case 12:
+                //code/logic / function call
+                console.log("You have won Macbook");
+                break;
+            default:   //it is optional/ it should always be at last
+            console.log("Oops you're not lucky today");
+                //code/logic / function call
+        }
+
+
+    </script>
+
+
+    
+</body>
+</html>
