@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Functions in JS</h1>
+    <input type="number" id="anyNumber" placeholder="Enter any number" />
+    <button onclick="checkEvenNumber()">Check</button>
+    
+</body>
+
+
+<script>
+
+    //when writing a function name : $, 0-9, a-z, A-Z, _(underscore) & variable names |  same rules apply
+    // my_function_name();  /// it is valid but not recommended
+    // myFunctionName();    /// it is valid & recommended  (using camelCase)
+    // 1myFunction();   /// it is not valid | error
+    // $myFunction(); it is valid recommended
+    // my-another-function();   error not valid, cannot use hyphens 
+
+    // functionName();  //calling a function/invoke
+
+    // //function definition
+    // function functionName() {  
+    //     //function body
+    //     //write your logic
+    //     document.write("Hello world!");
+    // }
+
+
+
+    //checkEvenNumber(5);  //function is passing a value to function definition and is know as argument 
+
+    // function checkEvenNumber(parameter1){   // when it receives value via call i's know as parameter
+    //     if( parameter1 % 2 == 0 ){
+    //         document.write("Yes ",parameter1, " is  even number.");
+    //     }
+    //     else{
+    //         document.write("No ",parameter1, " is  odd number.");
+    //     }
+    // }
+
+    function checkEvenNumber(){   // when it receives value via call i's know as parameter
+        var num = document.getElementById('anyNumber').value;
+        if( num % 2 == 0 ){
+            document.write("Yes ",num, " is  even number.");
+        }
+        else{
+            document.write("No ",num, " is  odd number.");
+        }
+    }
+
+    function addTwoNumbers(num1,num2,num3){
+        console.log("Addition ",num1 + num2 + num3);
+        let add = num1 + num2 + num3;
+        return add;
+    }
+
+    let returnedValue = addTwoNumbers(10,200,100);
+
+    document.write("<br/> Addition of two mumbers are ",returnedValue);
+
+
+
+</script>
+
+</html>
