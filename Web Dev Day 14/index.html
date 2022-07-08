@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Control Statement : While & Do While Loop</h1>
+
+</body>
+
+<script>
+    // first condition will be checked then block will be executed if true, else while block will not execute
+    // while(condition){
+    //     //code block
+    // }
+    document.write("Printing odd numbers from 1-100 <br/>")
+    let startNumber = parseInt(prompt("Enter any number"));
+    while( startNumber <= 100){
+        if( (startNumber % 2) == 1  ){
+            console.log(startNumber)
+            document.write(startNumber + "<br/>");
+        }
+        startNumber++;
+    }
+    document.write("<br/>Next line after loop");
+
+
+    // first do task so that code block will execute atleats once, condition will be checked later on after do block
+    // do{
+    //     //code block
+    // }
+    // while(condition)
+
+    document.write("<br/>Even Numbers");
+    let i = 100;
+    do{
+        if( i % 2 == 0){
+            document.write(i + ", ");
+        }
+        i++;
+    }
+    while(i<=100);
+
+
+
+
+
+
+
+</script>
+
+</html>
