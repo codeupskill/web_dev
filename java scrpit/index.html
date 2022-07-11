@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <h1>Control Statements</h1>
+    <ol>
+        <li>If else</li>
+        <li>Switch Case</li>
+        <li>Loops : for, while, do while </li>
+    </ol>
+
+    <p>Switch is <span id="bulbSwitch">off</span> </p>
+    <button onclick="toggleSwitch()">Switch off</button>
+    
+</body>
+
+<script>
+    // var switchValue = "off";
+    
+    function toggleSwitch(){
+        var realValue = document.getElementById("bulbSwitch").innerText;
+        if(realValue == "off")
+        {   
+            
+            console.log("Real Value ",realValue);
+            document.getElementById("bulbSwitch").innerText = "on";
+            document.getElementById("bulbSwitch").style.backgroundColor = "yellow";
+        } else {
+            console.log("Real Value ",realValue);
+            document.getElementById("bulbSwitch").innerText = "off";
+            document.getElementById("bulbSwitch").style.backgroundColor = "white";
+        }
+    }
+
+  /*  let dayOfWeek = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+                   //    0         1           2           3           4         5           6
+
+    console.log("Day of week at 0 index is ",dayOfWeek[0]);
+
+    // let today = dayOfWeek[3];
+    // console.log("Day of week at 0 index is ",dayOfWeek[0]);
+
+    let index = prompt("Enter weeek day from 0 - 6");
+    let today = dayOfWeek[index];
+
+    if(today == 'monday'){
+        alert("Hi folks! Today is monday.");
+    }
+    else if(today == 'tuesday'){
+        alert("Hi folks! Today is tuesday.");
+    }
+    else if(today == 'wednesday'){
+        alert("Hi folks! Today is wednesday.");
+    }
+    else if(today == 'thursday'){
+        alert("Hi folks! Today is thursday.");
+    }
+    else if(today == 'friday'){
+        alert("Hi folks! Today is friday.");
+    }
+    else if(today == 'saturday'){
+        alert("Hi folks! Today is saturday.");
+    }
+    else if(today == 'sunday'){
+        alert("Hi folks! Today is sunday.");
+    }
+    else{
+        alert("Hi folks! Today is else day.");
+    }*/
+
+
+
+
+
+
+</script>
+
+</html>
