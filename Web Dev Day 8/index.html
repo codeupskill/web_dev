@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+</head>
+<style>
+    #comb3 div + p {
+        background-color: yellow;
+    }
+
+    #comb4 div ~ p{
+        background-color: aqua;
+    }
+</style>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="fonts.html">Fonts</a>
+        <a href="overflow.html">Overflow</a>
+    </nav>
+
+    <div id="comb3">
+        <h1>Combinators :  Adjacent Sibling Selector +</h1>
+        <ol>
+            <li>Descendant Selector : Space</li>
+            <li>Child Selector : ></li>
+            <li>Adjacent sibling : +</li>
+            <li>General sibling: ~</li>
+        </ol>
+    
+        <div>
+    
+            <h2>Hello i'm h2 - 1</h2> 
+    
+            <p>
+                Hello i'm a paragraph 1
+            </p>
+    
+    
+            <p>
+                Hello i'm a paragraph 2
+            </p>
+    
+            <h2>Hello i'm h2 - 2</h2>
+    
+        </div>
+        <p>Hello i'm a paragraph 3</p>
+    
+        <h2>hello i'm in h2 - 3</h2>
+        <p>Hello i'm a paragraph 4</p>
+        <h2>hello i'm in h2 - 4</h2>
+    </div>
+
+
+    <hr/>
+
+    <div id="comb4">
+        <h1>Combinators :  General Sibling Selector ~</h1>
+        <ol>
+            <li>Descendant Selector : Space</li>
+            <li>Child Selector : ></li>
+            <li>Adjacent sibling : +</li>
+            <li>General sibling: ~</li>
+        </ol>
+    
+        <div>
+    
+            <h2>Hello i'm h2 - 1</h2> 
+    
+            <p>
+                Hello i'm a paragraph 1
+            </p>
+    
+    
+            <p>
+                Hello i'm a paragraph 2
+            </p>
+    
+            <h2>Hello i'm h2 - 2</h2>
+    
+        </div>
+        <p>Hello i'm a paragraph 3</p>
+    
+        <h2>hello i'm in h2 - 3</h2>
+        <p>Hello i'm a paragraph 4</p>
+        <h2>hello i'm in h2 - 4</h2>
+    </div>
+
+    
+    
+</body>
+</html>
