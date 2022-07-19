@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(169, 192, 181);
+}
+.box {
+  width: 100%;
+  /* margin: auto; */
+  text-align: center;
+  /* border: 2px solid blue; */
+  margin-top: 70px;
+  
+}
+.box1 {
+  background-color: #05010163 !important;
+  /* opacity: 0.9; */
+  width: 30%;
+  margin: auto;
+  /* border: 2px solid red; */
+  /* height: 500px; */
+  background-color: transparent;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  
+}
+h1 {
+  position: relative;
+  top: 81px;
+  font-size: 50px;
+  color: tomato;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: inherit;
+}
+
+button {
+  /* border: 2px solid red; */
+  width: 20%;
+  border: 2px solid;
+  
+  font-weight: 900;
+  font-size: large;
+  font-style: initial;
+  /* margin-top: 50px; */
+  background-color: #0e6dac;
+  color: aliceblue;
+  border-radius: 20px;
+  padding: 20px 5px;
+  
+  
+}
+#demo {
+  text-align: right;
+  font-size: 40px;
+  font-weight: bolder;
+  width: 90%;
+  height: 70px;
+  border: 2px solid;
+  margin-top: 20px;
+  background-color: rgb(230, 220, 220);
+  margin-bottom: 0px;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+.box1 button {
+  margin: 10px 5px;
+}
+.btn2 {
+  margin-top: 30px;
+  /* text-shadow: 2px 2px 3px red; */
+}
+.btn1 button {
+  background-color: tomato;
+}
+.btn3 button {
+  background-color: tomato;
+}

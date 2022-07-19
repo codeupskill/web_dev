@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function toggleBtn() {
+            var screen = document.getElementById('enable').innerHTML;
+            //defaultvalue==rlight => print kra do
+            if (screen == "light") {
+                document.getElementById('enable').innerText = "dark";
+                document.getElementById('body').style.backgroundColor = "black";
+                document.getElementById('body').style.color = "white";
+            }
+            else if (screen == "dark") {
+                document.getElementById('enable').innerText = "light";
+                document.getElementById('body').style.backgroundColor = "white";
+                document.getElementById('body').style.color = "black";
+            }
+
+        }
+    </script>
+
+</head>
+
+<body id="body">
+
+    <button onclick="toggleBtn()"> enable <span id="enable">dark</span> mode</button>
+
+
+
+</body>
+
+</html>

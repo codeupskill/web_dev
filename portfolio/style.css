@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 50%;
+    
+  background-image: url(/portfolio/image/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+header{
+   
+    width: 100%;
+    display: inline-block;
+    position: fixed;
+    z-index: 1;
+}
+nav{
+    width: 50%;
+    float: right;
+    
+   
+}
+nav ul li {
+    position: relative;
+    bottom: 20px;
+    
+}
+nav ul li a{
+    padding: 2px 10px;
+    text-decoration: none;
+    color: rgb(247, 241, 241);
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(16, 180, 16);
+    cursor: pointer;
+}
+nav ul li a:hover{
+    background-color: transparent;
+    color: red;
+}
+
+nav ul li{
+    /* padding: 0 5px 0 5px; */
+    margin-right:30px ;
+    
+    
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    
+}
+.logoname{
+    letter-spacing: 4px;
+    width: 30%;
+    margin:20px 0 0 50px ;
+    /* margin-left: 50px; */
+    text-align: center;
+    text-transform: uppercase;
+}
+.sec1{
+    width: 100%;
+    /* border: 2px solid; */
+    display: inline-block;
+   
+     /* display: flex;
+    justify-content: space-around;  */
+}
+.leftside{
+    position: relative;
+    left: 300px;
+    top: 100px;
+    display: inline-block;
+    width: 30%;
+}
+.rightside{
+    position: relative;
+    left: 311px;
+    bottom: 200px;
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+}
+.rightside img{ 
+    position: relative;
+    left: 100px;
+    width: 30%;
+    bottom: 90px;
+   border-bottom-left-radius: 50px;
+   border-top-right-radius: 50px;
+}
+.name{
+    
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.name span{
+    font-size: 20px;
+}
+header span{
+    color: white;
+    background-color: rgb(16, 180, 16);
+    padding-left: 5px;
+    font-weight: 900px;
+    
+}
+.leftside p{
+    text-transform: capitalize;
+    margin-top: 20px;
+    
+    letter-spacing: 2px;
+   line-height: 30px;
+   font-weight: 600px;
+    
+}
+div .btn{
+    margin-top: 20px;
+    
+    padding: 1px 5px;
+    text-align: center;
+    border: 2px solid black ;
+    color: aliceblue;
+    background-color: rgb(16, 180, 16);
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor:pointer;
+
+
+}
+
+div .btn a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.btn a:hover {
+    background-color: transparent;
+    color: red;
+}
+.sec2{
+    width: 100%;
+    /* border: 2px solid; */
+    height: 700px;
+
+}
+.sec2 h2{
+   /* border: 2px solid red; */
+   text-align: center;
+    width: 20%;
+    margin: 0 auto;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.aboutimg{
+    width: 45%;
+    float: right;
+   
+    /* position: relative;
+    bottom: 170px; */
+
+}
+.about{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.aboutimg img{
+    width: 50%;
+    border-radius: 20px;
+    
+}
+.pera{
+
+    margin-top: 100px;
+    text-transform: capitalize;
+display: inline-block;
+width: 50%;
+font-size: 20px;
+line-height: 40px;
+}
+.pera0{
+    margin-top: 50px;
+}
