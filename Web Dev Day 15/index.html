@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Objects</h1>
+    <script>
+        // var myObj = { name : value, name : value, method : (){} }
+        var person = { 
+                        fullName: "Abhishek",
+                        gender : "Male" , 
+                        age : 18, 
+                        eat : function(){ 
+                                return (this.fullName + " is my name & I'm an Object"); 
+                            } 
+                    };
+        document.write("I have an Object Person which i am going to print <br/>");
+        document.write("Eat method/function :" + person.eat() +" <br/>");
+        document.write("Fullname :" + person.fullName+" <br/>");
+        console.log(person);
+    </script>
+</body>
+</html>

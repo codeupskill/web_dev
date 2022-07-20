@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Events</h1>
+    <ul>
+        <li>onclick : when user clicks on any element </li>
+        <li>onchange : when an element has been changed </li>
+        <li>onmouseover : when user mouse over an element </li>
+        <li>onkeydown : when user pushed down a key on keyboard </li>
+        <li>onkeyup : when user lifts up a pushed down key</li>
+        <li>onload :  when html page has finished it's loading </li>
+        <li>onblur : when user shifts from an html element </li>
+
+    </ul>
+    
+
+    <h1>Demo of some events</h1>
+    <p>
+        <input type="text" placeholder="Enter name" onblur="getData()" id="name"  />
+        <input type="text" placeholder="Enter something" onkeyup="getEveryCharacter()" id="character"  />
+    </p>
+    <div>
+        <span id="details">Waiting for details.</span>
+        <span id="characterSpan">Waiting for characters.</span>
+    </div>
+
+    <p id="date"></p>
+    <button onclick="document.getElementById('date').innerText = Date()">Click to see date</button>
+    <script>
+        // <element event='js code'>
+        function getData(){
+            var someId = document.getElementById('name');
+            console.log(someId.value);
+            var detailsSpan = document.getElementById("details");
+            detailsSpan.innerHTML  =  someId.value;
+        }
+
+        function getEveryCharacter(){
+            var someId = document.getElementById('character');
+            console.log(someId.value);
+            var charcterSpan = document.getElementById("characterSpan");
+            charcterSpan.innerHTML  =  someId.value;
+        }
+
+    </script>
+</body>
+</html>
